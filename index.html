@@ -197,7 +197,7 @@
 
     async function fetchActions() {
         try {
-            const response = await fetch('/all-actions.txt');
+            const response = await fetch('all-actions.txt');
             const text = await response.text();
             actions = text.trim().split('\n');
             startLoop();
